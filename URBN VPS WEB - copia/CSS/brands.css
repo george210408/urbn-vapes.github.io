@@ -1,0 +1,522 @@
+/* Brand Pages Styling */
+
+/* Brand Headers - Each brand gets unique colors */
+.brand-header {
+    width: 100%;
+    height: 70vh;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Fume Brand - Purple/Pink gradient */
+.fume-header {
+    background: linear-gradient(135deg, rgba(156, 39, 176, 0.9), rgba(233, 30, 99, 0.9)), 
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+    background-blend-mode: normal;
+}
+
+/* Skyline Brand - Blue gradient */
+.skyline-header {
+    background: linear-gradient(135deg, rgba(33, 150, 243, 0.9), rgba(3, 169, 244, 0.9)), 
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+    background-blend-mode: normal;
+}
+
+/* HQD Brand - Red/Orange gradient */
+.hqd-header {
+    background: linear-gradient(135deg, rgba(244, 67, 54, 0.9), rgba(255, 87, 34, 0.9)), 
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+    background-blend-mode: normal;
+}
+
+/* Mesii Brand - Green/Teal gradient */
+.mesii-header {
+    background: linear-gradient(135deg, rgba(0, 150, 136, 0.9), rgba(76, 175, 80, 0.9)), 
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+    background-blend-mode: normal;
+}
+
+/* Brand Hero Section */
+.brand-hero {
+    text-align: center;
+    color: #fff;
+    z-index: 10;
+    padding: 0 20px;
+    animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.brand-logo {
+    margin-bottom: 30px;
+    animation: zoomIn 0.8s ease;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.brand-logo img {
+    max-width: 250px;
+    height: auto;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+}
+
+.brand-hero h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+}
+
+.brand-tagline {
+    font-size: 24px;
+    font-weight: 300;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+}
+
+/* Brand Introduction */
+.brand-intro {
+    padding: 80px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.brand-description {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Features Section */
+.brand-features {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.feature-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.1));
+}
+
+.feature-card h3 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.feature-card p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Products Section */
+.brand-products {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+.product-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.1);
+}
+
+.product-info {
+    padding: 30px 25px;
+    text-align: center;
+}
+
+.product-info h3 {
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.product-puffs {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.product-desc {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Brand-specific product badge colors */
+.fume-header ~ main .product-puffs {
+    background: linear-gradient(135deg, #9c27b0 0%, #e91e63 100%);
+}
+
+.skyline-header ~ main .product-puffs {
+    background: linear-gradient(135deg, #2196f3 0%, #03a9f4 100%);
+}
+
+.hqd-header ~ main .product-puffs {
+    background: linear-gradient(135deg, #f44336 0%, #ff5722 100%);
+}
+
+.mesii-header ~ main .product-puffs {
+    background: linear-gradient(135deg, #009688 0%, #4caf50 100%);
+}
+
+/* Call to Action Section */
+.brand-cta {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    text-align: center;
+    color: #fff;
+}
+
+/* Brand-specific CTA colors */
+.fume-header ~ main .brand-cta {
+    background: linear-gradient(135deg, #9c27b0 0%, #e91e63 100%);
+}
+
+.skyline-header ~ main .brand-cta {
+    background: linear-gradient(135deg, #2196f3 0%, #03a9f4 100%);
+}
+
+.hqd-header ~ main .brand-cta {
+    background: linear-gradient(135deg, #f44336 0%, #ff5722 100%);
+}
+
+.mesii-header ~ main .brand-cta {
+    background: linear-gradient(135deg, #009688 0%, #4caf50 100%);
+}
+
+.brand-cta h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.brand-cta p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    opacity: 0.95;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #fff;
+    color: #333;
+    padding: 18px 50px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    background: #f5f5f5;
+}
+
+/* Responsive Design for Brand Pages */
+@media screen and (max-width: 900px) {
+    .brand-header {
+        height: 60vh;
+        min-height: 450px;
+    }
+
+    .brand-hero h1 {
+        font-size: 42px;
+    }
+
+    .brand-tagline {
+        font-size: 20px;
+    }
+
+    .brand-logo img {
+        max-width: 180px;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+    }
+
+    .brand-intro,
+    .brand-features,
+    .brand-products {
+        padding: 60px 0;
+    }
+
+    .brand-cta {
+        padding: 70px 0;
+    }
+
+    .brand-cta h2 {
+        font-size: 32px;
+    }
+
+    .brand-cta p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .brand-header {
+        height: 55vh;
+        min-height: 400px;
+    }
+
+    .brand-hero h1 {
+        font-size: 32px;
+    }
+
+    .brand-tagline {
+        font-size: 16px;
+    }
+
+    .brand-logo img {
+        max-width: 140px;
+    }
+
+    .brand-description {
+        font-size: 16px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-card {
+        padding: 30px 20px;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .product-image {
+        height: 250px;
+    }
+
+    .brand-intro,
+    .brand-features,
+    .brand-products {
+        padding: 50px 0;
+    }
+
+    .brand-cta {
+        padding: 60px 20px;
+    }
+
+    .brand-cta h2 {
+        font-size: 28px;
+    }
+
+    .brand-cta p {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        padding: 15px 40px;
+        font-size: 16px;
+    }
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Additional animations for product cards */
+.product-card {
+    animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Staggered animation for grid items */
+.product-card:nth-child(1) { animation-delay: 0.1s; }
+.product-card:nth-child(2) { animation-delay: 0.2s; }
+.product-card:nth-child(3) { animation-delay: 0.3s; }
+.product-card:nth-child(4) { animation-delay: 0.4s; }
+
+/* Out of Stock Message */
+.out-of-stock-container {
+    text-align: center;
+    padding: 100px 20px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.out-of-stock-main {
+    font-size: 80px;
+    font-weight: 900;
+    color: #dc2626;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 10px rgba(220, 38, 38, 0.3);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.out-of-stock-sub {
+    font-size: 36px;
+    font-weight: 600;
+    color: #dc2626;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    opacity: 0.8;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.9;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .out-of-stock-main {
+        font-size: 60px;
+        letter-spacing: 5px;
+    }
+    
+    .out-of-stock-sub {
+        font-size: 28px;
+        letter-spacing: 3px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .out-of-stock-main {
+        font-size: 40px;
+        letter-spacing: 3px;
+    }
+    
+    .out-of-stock-sub {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    
+    .out-of-stock-container {
+        padding: 60px 20px;
+        min-height: 300px;
+    }
+}

@@ -1,0 +1,254 @@
+/* About Us Page Styling */
+
+.nosotros-header {
+    background: linear-gradient(135deg, rgba(100, 42, 115, 0.9), rgba(173, 83, 137, 0.9));
+}
+
+/* About Intro */
+.about-intro {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* Mission & Vision */
+.mision-vision {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.mv-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.mv-card {
+    background: #fff;
+    padding: 50px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.mv-card:hover {
+    transform: translateY(-10px);
+}
+
+.mv-icon {
+    font-size: 60px;
+    margin-bottom: 25px;
+}
+
+.mv-card h3 {
+    color: #642a73;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.mv-card p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Valores */
+.valores {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.valor-card {
+    background: #f9f9f9;
+    padding: 35px 25px;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.valor-card:hover {
+    background: #fff;
+    border-color: #642a73;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(100, 42, 115, 0.15);
+}
+
+.valor-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.valor-card h4 {
+    color: #642a73;
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.valor-card p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Por Qué Elegirnos */
+.por-que-elegirnos {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.razones-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+    margin-top: 40px;
+}
+
+.razon {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.razon:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.razon-number {
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    font-size: 80px;
+    font-weight: 700;
+    color: rgba(100, 42, 115, 0.08);
+    line-height: 1;
+}
+
+.razon h4 {
+    color: #642a73;
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+}
+
+.razon p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.7;
+    position: relative;
+    z-index: 1;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #642a73 0%, #ad5389 100%);
+    text-align: center;
+    color: #fff;
+}
+
+.cta-section h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    opacity: 0.95;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #fff;
+    color: #642a73;
+    padding: 18px 50px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    background: #f5f5f5;
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+    .mv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-text {
+        font-size: 16px;
+    }
+
+    .mv-card {
+        padding: 40px 30px;
+    }
+
+    .mv-card h3 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-intro,
+    .mision-vision,
+    .valores,
+    .por-que-elegirnos {
+        padding: 50px 0;
+    }
+
+    .cta-section {
+        padding: 60px 20px;
+    }
+
+    .cta-section h2 {
+        font-size: 28px;
+    }
+
+    .valores-grid,
+    .razones-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .razon-number {
+        font-size: 60px;
+    }
+}
